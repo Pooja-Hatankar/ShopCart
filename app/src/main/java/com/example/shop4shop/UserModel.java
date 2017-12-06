@@ -4,7 +4,7 @@ package com.example.shop4shop;
  * Created by LENOVO on 25-11-2017.
  */
 
-public class User {
+public class UserModel {
 
     int _id;
     String _name;

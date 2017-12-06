@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_pNAme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:text="Product Name:" />
+    <TextView
+        android:id="@+id/tv_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_pNAme"
+        android:layout_toRightOf="@+id/tv_pNAme"
+        android:layout_marginTop="13dp"
+        android:text="name"/>
+
+    <TextView
+        android:id="@+id/tv_pCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_pNAme"
+        android:layout_alignStart="@+id/tv_pNAme"
+        android:layout_below="@+id/tv_pNAme"
+        android:layout_marginTop="12dp"
+        android:text="Cost:" />
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_pCost"
+        android:layout_toEndOf="@+id/tv_pCost"
+        android:layout_marginTop="12dp"
+        android:text="cost"
+        android:layout_below="@+id/tv_pNAme"/>
+
+    <Button
+        android:id="@+id/btn_addtoCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_cost"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Add To Cart" />
+</RelativeLayout>

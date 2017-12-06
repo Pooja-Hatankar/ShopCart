@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/tv_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/product_name"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_product"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/tv_product"
+        android:layout_below="@+id/tv_product"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/Cost" />
+    <TextView
+        android:id="@+id/prize_tv_cart_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_price"
+        android:layout_alignBottom="@+id/tv_price"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/tv_price"
+        android:layout_toRightOf="@+id/tv_price"
+        android:text="Prize"
+       />
+
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/tv_count"
+        android:layout_toStartOf="@+id/tv_count"
+        android:background="?selectableItemBackgroundBorderless"
+        android:backgroundTint="@color/lightYellow"
+        android:text="@string/Minus"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:text="@string/Plus"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/btn_plus"
+        android:layout_toStartOf="@+id/btn_plus"
+        android:text="10"
+        android:textSize="24sp"
+         />
+
+
+
+
+    <Button
+        android:id="@+id/delete_btn_cart_page"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/tv_count"
+        android:layout_alignStart="@+id/tv_count"
+        android:layout_below="@+id/tv_count"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/delete"
+        android:foreground="?selectableItemBackgroundBorderless" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.shop4shop.TabbedActivity">
+    <item
+        android:id="@+id/action_cart"
+        android:title="@string/AddedToCart"
+        app:actionLayout="@layout/cart_layout"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout1"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>

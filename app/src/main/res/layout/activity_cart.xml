@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.shop4shop.CartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/cart_toolbar"
+            layout="@layout/toolbar"/>
+
+        <ListView
+            android:id="@+id/list_view_cart_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linearLayoutCart"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cart_toolbar"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            tools:listitem="@layout/list_view_cart" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_above="@id/linearLayoutCart"/>
+        <LinearLayout
+            android:id="@+id/linearLayoutCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/cart-checkout_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:gravity="center_vertical|center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/checkout"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="70dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/cart_total_tv"
+                style="@android:style/Widget.TextView.PopupMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="Total Cost: 5655"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
